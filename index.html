@@ -18,7 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body class="text-[#704114] bg-[#feead6]">
+  <body class="text-[#704114] bg-[#f8e9e9]">
     <!-- mobile hamburger menu -->
     <header class="text-[#704114]">
       <button
@@ -29,9 +29,9 @@
       </button>
       <div class="flex flex-row gap-[30px] pt-[30px] pb-[20px] px-[30px]">
         <nav id="desk-nav" class="hidden md:flex flex-row gap-[30px]">
-          <p>Home</p>
-          <p>Reviews</p>
-          <p>Menu</p>
+          <a href="#home"><p>Home</p></a>
+          <a href="#reviews"><p>Reviews</p></a>
+          <a href="#menu"><p>Menu</p></a>
         </nav>
         <div class="flex flex-row justify-center pl-[10px] md:pl-[330px]">
           <p
@@ -52,16 +52,16 @@
         id="mob-nav"
         class="hidden md:hidden bg-white border-t border-amber-200 divide-y divide-amber-200"
       >
-        <p class="px-[30px] py-3">Home</p>
-        <p class="px-[30px] py-3">Reviews</p>
-        <p class="px-[30px] py-3">Menu</p>
+        <a href="#home"><p class="px-[30px] py-3">Home</p></a>
+        <a href="#reviews"><p class="px-[30px] py-3">Reviews</p></a>
+        <a href="#menu"><p class="px-[30px] py-3">Menu</p></a>
       </nav>
       <!-- the line -->
       <div class="hidden md:block w-[100%] h-[0.5px] bg-amber-500"></div>
     </header>
 
     <!-- First Section -->
-    <section class="flex flex-col items-center text-[#704114]">
+    <section id="home" class="flex flex-col items-center text-[#704114]">
       <p
         class="font-[700] w-[80%] leading-[50px] text-center text-[46px] md:text-[60px] md:pt-[55px] pt-[75px] pb-[15px]"
       >
@@ -94,10 +94,12 @@
       <!-- text block -->
       <aside class="w-full md:w-1/2 h-auto md:h-[80vh] flex flex-col">
         <div class="px-[20px] md:px-[30px] md:pt-[80px]">
-          <p class="text-[25px] font-[700] pt-10 pb-[40px] w-[100%]">
+          <p
+            class="text-[22px] md:text-[35px] font-[700] pt-10 pb-[40px] w-[100%]"
+          >
             Welcome to Lunar Latte Cafe
           </p>
-          <p class="text-[17px] md:text-[17px]">
+          <p class="text-[17px] md:text-[19px]">
             Nestled in the heart of Lagos, Lunar Latte is more than just a
             coffee shop, it's a space designed for connection, comfort, and
             exceptional flavors. Our mission is to serve expertly crafted coffee
@@ -138,7 +140,7 @@
       >
         <!-- smiley svg path -->
         <div class="flex flex-row justify-center w-[100%] pb-[20px]">
-          <div class="flex flex-row">
+          <div class="flex flex-row pl-[40px]">
             <svg
               class=""
               xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +173,7 @@
           </p>
         </div>
 
-        <div class="flex flex-row pl-[5px] pr-[20px] w-[100%] pb-[20px]">
+        <div class="flex flex-row pl-[25px] pr-[20px] w-[100%] pb-[20px]">
           <div class="">
             <!-- multiple arrows svg -->
             <!-- Its big like this because of multiple arrows -->
@@ -288,7 +290,7 @@
     </section>
 
     <!-- Fifth Section -->
-    <section class="mb-[100px] h-[120vh] w-[100%]">
+    <section id="reviews" class="mb-[100px] h-[105vh] w-[100%]">
       <div
         class="bg-[url(../images/shop.avif)] bg-cover bg-center w-[100%] h-[120vh] rounded-t-[30px] flex flex-col md:flex-row md:pr-[20px]"
       >
@@ -428,22 +430,22 @@
         <!-- This is the end of the bg-img div -->
       </div>
       <div
-        class="grid grid-cols-3 gap-[20px] md:gap-[100px] justify-between py-[20px] md:px-[300px] px-[10px] bg-[#feead6] text-[14px] md:text-[18px] rounded-b-[30px]"
+        class="grid grid-cols-3 gap-[20px] justify-between py-[20px] md:pl-[200px] px-[10px] bg-[#F7D2AD] text-[14px] md:text-[18px] rounded-b-[30px]"
       >
-        <p id="selectiontxt" class="hover:text-[#e9c5a4]">
+        <p id="selectiontxt" class="hover:text-[#e6bb94]">
           <a href="#CoffeeSelection"> Coffee Selection</a>
         </p>
-        <p id="selectiontxt" class="hover:text-[#e9c5a4]">
+        <p id="selectiontxt" class="hover:text-[#e6bb94]">
           <a href="#Specialty Drinks">Specialty Drinks</a>
         </p>
-        <p id="selectiontxt" class="hover:text-[#e9c5a4]">
+        <p id="selectiontxt" class="hover:text-[#e6bb94]">
           <a href="#Pastries&Bites">Pastries & Bites</a>
         </p>
       </div>
     </section>
 
     <!-- Sixth Section on COFFEE SELECTION -->
-    <section class="my-[150px]">
+    <section id="menu" class="my-[200px] md:mt-[250px] md:mb-[100px]">
       <p
         id="CoffeeSelection"
         class="lg:text-[35px] text-[25px] font-[700] pl-[40px]"
@@ -1012,28 +1014,30 @@
         <div
           class="flex flex-row relative bottom-[120px] left-[30px] gap-[35px]"
         >
-          <div
-            class="w-[140px] lg:w-[250px] h-[70px] lg:h-[100px] text-center rounded-[10px] bg-[#fff6f1] py-[20px] ml-[-10px] lg:ml-[30px] lg:px-[10px] hover:shadow-lg hover:bg-[#f9d3ae] ease-in-out duration-400"
-          >
-            <p class="text-[13px] lg:text-[19px] text-[#704014b6]">Phone</p>
-            <p class="font-[700] text-[12px] lg:text-[17px]">
-              +234 (91) 3063 5266
-            </p>
-          </div>
-          <div
-            class="w-[160px] lg:w-[250px] h-[70px] lg:h-[100px] text-center rounded-[10px] bg-[#fff6f1] py-[20px] ml-[-15px] lg:ml-[0px] lg:px-[10px] hover:shadow-lg hover:bg-[#f9d3ae] ease-in-out duration-400"
-          >
-            <p class="text-[13px] lg:text-[19px] text-[#704014b6]">Email</p>
-            <p class="font-[700] text-[12px] lg:text-[17px]">
-              Viceddie124@gmail.com
-            </p>
-          </div>
+          <a href="tel:+2349130635266">
+            <div
+              class="w-[140px] lg:w-[250px] h-[70px] lg:h-[100px] text-center rounded-[10px] bg-[#fff6f1] py-[20px] ml-[-10px] lg:ml-[0px] lg:px-[10px] hover:shadow-lg hover:bg-[#f9d3ae] ease-in-out duration-400"
+            >
+              <p class="text-[13px] lg:text-[19px] text-[#704014b6]">Phone</p>
+              <p class="font-[700] text-[12px] lg:text-[17px]">
+                +234 (91) 3063 5266
+              </p>
+            </div>
+          </a>
+
+          <a href="mailto:viceddie124@gmail.com">
+            <div
+              class="w-[160px] lg:w-[250px] h-[70px] lg:h-[100px] text-center rounded-[10px] bg-[#fff6f1] py-[20px] ml-[-20px] lg:ml-[0px] lg:px-[10px] hover:shadow-lg hover:bg-[#f9d3ae] ease-in-out duration-400"
+            >
+              <p class="text-[13px] lg:text-[19px] text-[#704014b6]">Email</p>
+              <p class="font-[700] text-[12px] lg:text-[17px]">
+                Viceddie124@gmail.com
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
-    <div class="bg-[#feead6] py-[30px]">
-      <div class="flex ml-[30px] w-[95%] h-[0.5px] bg-amber-500"></div>
-    </div>
 
     <!-- Address Area -->
     <div
@@ -1065,7 +1069,7 @@
       </div>
     </div>
 
-    <section class="flex flex-row h-[120vh] text-[white]">
+    <section class="flex flex-row h-[90vh] text-[white]">
       <div class="w-[50%] bg-[#704114] pl-[40px]">
         <p class="text-[26px] font-[800] pt-[100px] pb-[16px]">Lunar Latte</p>
         <p class="text-[22px] w-[50%] italic">
@@ -1158,7 +1162,10 @@
         <img src="images/pic4.jpg" alt="" />
       </div>
 
-      <a href="#" class="instagram flex flex-row">
+      <a
+        href="https://www.instagram.com/eduwin124?igsh=NHk5cjQ4ZmM3emFt&utm_source=qr"
+        class="instagram flex flex-row"
+      >
         <h1 class="pr-[20px]">Instagram</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="29" height="32">
           <g fill="#fff7f0">
