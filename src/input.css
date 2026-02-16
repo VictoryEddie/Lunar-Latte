@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+#prntdiv:hover {
+  background-color: #704114;
+  cursor: pointer;
+  transition: all ease-in-out 0.6s;
+}
+
+#prntdiv:hover #hvr-text {
+  color: #eca25e;
+  transition: all ease-in-out 0.6s;
+}
+
+#prntdiv:hover #spantxt {
+  color: white;
+  transition: all ease-in-out 0.6s;
+}
+
+#prntdiv:hover #hvr-svg {
+  fill: white;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(-10deg);
+}
+#selectiontxt:hover {
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+#txtarea::placeholder {
+  color: #e8b480;
+}
+#svgarrow {
+  position: relative;
+  top: 4px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  overflow: hidden;
+  background: rgb(102, 57, 21);
+  padding: 40px;
+  position: relative;
+}
+.instagram {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(102, 57, 21, 0.694);
+  z-index: 100;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  transform: translateY(600px);
+  transition: all 0.6s ease-in-out;
+}
+.container:hover .instagram {
+  transform: translateY(0px);
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+}
+
+.content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
